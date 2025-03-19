@@ -107,7 +107,7 @@ export default function Login() {
           </div>
 
           <div className="text-center mt-4 text-sm">
-            Already Registered? <span className="text-purple-600 cursor-pointer">Log In</span>
+            Already Registered? <span className="text-purple-600 cursor-pointer">Log In </span>
           </div>
         </motion.div>
 
