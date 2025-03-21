@@ -12,23 +12,23 @@ export default function Sidebar() {
                         <span className="font-extrabold text-xl">ChefConnect</span>
                     </div>
                     <div className="flex-col w-full mt-20 pl-2">
-                        <div className="flex-row flex items-center hover:bg-gray-200 px-4 py-4 rounded-xl mb-1 cursor-pointer">
+                        <div className="flex-row flex items-center hover:bg-purple-200 px-4 py-4 rounded-xl mb-1 cursor-pointer">
                             <img src={img} alt="" className="w-6" />
                             <span className="font-extrabold text-md px-4">Home</span>
                         </div>
-                        <div className="flex-row flex items-center hover:bg-gray-200 px-4 py-4 rounded-xl mb-1 cursor-pointer">
+                        <div className="flex-row flex items-center hover:bg-purple-200 px-4 py-4 rounded-xl mb-1 cursor-pointer">
                             <img src={Search} alt="" className="w-6" />
                             <span className="font-extrabold text-md px-4">Search</span>
                         </div>
-                        <div className="flex-row flex items-center hover:bg-gray-200 px-4 py-4 rounded-xl mb-1 cursor-pointer">
+                        <div className="flex-row flex items-center hover:bg-purple-200 px-4 py-4 rounded-xl mb-1 cursor-pointer">
                             <img src={star} alt="" className="w-6" />
                             <span className="font-extrabold text-md px-4">Explore</span>
                         </div>
-                        <div className="flex-row flex items-center hover:bg-gray-200 px-4 py-4 rounded-xl mb-1 cursor-pointer">
+                        <div className="flex-row flex items-center hover:bg-purple-200 px-4 py-4 rounded-xl mb-1 cursor-pointer">
                             <img src={Like} alt="" className="w-6" />
                             <span className="font-extrabold text-md px-4">Notifications</span>
                         </div>
-                        <div className="flex-row flex items-center hover:bg-gray-200 px-4 py-4 rounded-xl mb-1 cursor-pointer">
+                        <div className="flex-row flex items-center hover:bg-purple-200 px-4 py-4 rounded-xl mb-1 cursor-pointer">
                             <img src={Like} alt="" className="w-6" />
                             <span className="font-extrabold text-md px-4">Profile</span>
                         </div>
@@ -36,7 +36,7 @@ export default function Sidebar() {
                 </div>
 
                 <div className="flex flex-col w-full  pl-2 mb-5">
-                    <div className="flex-row flex items-center hover:bg-gray-200 px-4 py-4 rounded-xl cursor-pointer">
+                    <div className="flex-row flex items-center hover:bg-purple-200 px-4 py-4 rounded-xl cursor-pointer">
                         <img src={img} alt="" className="w-6" />
                         <span className="font-extrabold text-md px-4">Logout</span>
                     </div>
