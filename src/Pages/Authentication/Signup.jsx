@@ -2,9 +2,11 @@ import { useFormik } from "formik";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import img from "../../assets/public/logo.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [errors, setErrors] = useState();
+  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -95,6 +97,7 @@ export default function Login() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => formik.handleSubmit()}
+            type="button"
             className="bg-purple-500 hover:bg-purple-600 text-white w-full py-3 rounded-lg font-bold mb-4 transition-transform"
           >
             Sign up
@@ -107,7 +110,7 @@ export default function Login() {
           </div>
 
           <div className="text-center mt-4 text-sm">
-            Already Registered? <span className="text-purple-600 cursor-pointer">Log In </span>
+            Already Registered? <span className="text-purple-600 cursor-pointer" onClick={() => navigate('/login')} >Log In </span>
           </div>
         </motion.div>
 
