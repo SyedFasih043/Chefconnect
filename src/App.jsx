@@ -6,9 +6,11 @@ export default function App()
 {
   const Login = React.lazy(() => import('./Pages/Authentication/Login'));
   const Signup = React.lazy(() => import("./Pages/Authentication/Signup"));
+  const Home = React.lazy(() => import("./Pages/Home/Home"));
   const pages = [
     { name: "Login", path: "/login", element: <Login /> },
     { name: "Register", path: "/signup", element: <Signup /> },
+    { name: "Home", path: "/", element: <Home /> },
 
   ];
 
