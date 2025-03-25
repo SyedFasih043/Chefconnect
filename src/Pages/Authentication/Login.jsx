@@ -1,7 +1,7 @@
 import { useFormik } from "formik";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import img from "../../assets/public/logo.png";
+import img from "../../assets/public/Home.png";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
@@ -21,6 +21,7 @@ export default function Login() {
     },
     onSubmit: (values) => {
       console.log(values);
+      navigate('/')
     },
   });
 
