@@ -2,12 +2,19 @@ import img from "../assets/public/Home.png";
 import Search from "../assets/public/Search.png";
 import star from "../assets/public/Star.png";
 import Like from "../assets/public/Like.png";
+import { useNavigate } from "react-router-dom";
 
 
 export default function MobileSidebar(){
+
+    const navigate = useNavigate();
+
+    function handleNavigate(location){
+        navigate(location);
+    }
     return(
         <div className="fixed bottom-0 left-0 w-full bg-white border-t lg:hidden flex justify-around py-4">
-            <div className="flex flex-col items-center cursor-pointer">
+            <div className="flex flex-col items-center cursor-pointer" onClick={() => handleNavigate('/')}>
                 <img src={img} alt="Home" className="w-6" />
                 <span className="text-sm">Home</span>
             </div>
@@ -23,7 +30,7 @@ export default function MobileSidebar(){
                 <img src={Like} alt="Notifications" className="w-6" />
                 <span className="text-sm">Notifications</span>
             </div>
-            <div className="flex flex-col items-center cursor-pointer">
+            <div className="flex flex-col items-center cursor-pointer" onClick={() => handleNavigate('/profile')}>
                 <img src={img} alt="Profile" className="w-6" />
                 <span className="text-sm">Profile</span>
             </div>
