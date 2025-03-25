@@ -1,7 +1,7 @@
-import img from "../assets/public/Home.png";
-import Search from "../assets/public/Search.png";
-import star from "../assets/public/Star.png";
-import Like from "../assets/public/Like.png";
+import img from "../../assets/public/Home.png";
+import Search from "../../assets/public/Search.png";
+import star from "../../assets/public/Star.png";
+import Like from "../../assets/public/Like.png";
 import { useNavigate } from "react-router-dom";
 
 

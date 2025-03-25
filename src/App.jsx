@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import React, {Suspense, useState} from "react";
 
 import Sidebar from "../src/Components/Sidebar/Sidebar"
-import MobileSidebar from "../src/Components/MobileSidebar."
+import MobileSidebar from "./Components/Sidebar/MobileSidebar"
 export default function App()
 {
   const Login = React.lazy(() => import('./Pages/Authentication/Login'));
@@ -31,7 +31,7 @@ export default function App()
                             </div>
                         
                             {/* Main Content */}
-                            <div className="flex flex-col w-full items-center">
+                            <div className="flex flex-col w-full items-center overflow-y-scroll">
                             <Routes>
                         
                             {pages &&
