@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export  const axiosInstance = axios.create({
-    baseURL: "http://localhost:8000/api",
+    baseURL: import.meta.env.VITE_APP_BACKEND_URL,
 })
 // intercept each request and add a bearer token
 axiosInstance.interceptors.request.use((config) => {

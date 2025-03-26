@@ -8,17 +8,17 @@ const stateContext = createContext({
 })
 
 export const ContextProvider = ({ children }) => {
-    const [user, _setUser] = useState(localStorage.getItem("user_id"));
+    const [user, _setUser] = useState(localStorage.getItem("user"));
     const [token, _setToken] = useState(localStorage.getItem("login_token"));
 
     function setUser(user){
         _setUser(user);
         console.log(user);
         if(user){
-            localStorage.setItem("user_id" , user);
+            localStorage.setItem("user" , user);
         }
         else{
-            localStorage.removeItem("user_id");
+            localStorage.removeItem("user");
         }
     }
 
